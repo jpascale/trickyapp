@@ -1,6 +1,6 @@
 var fs = require('fs');
 for (var j = 0; j < 4; j++) {
-	for (var i = 0; i < 5000; i++) {
+	for (var i = 0; i < 2000; i++) {
 		console.log(`Running test ${j}${i}`);
 		fs.appendFileSync(`testresults1.txt`, `[INFO] test ${j}${i} has passed successfully. For more info Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat quis justo at volutpat. Vivamus pulvinar eros purus, in ullamcorper erat mattis id. Donec consequat sem at enim lobortis, sed tristique eros porta. Praesent sit amet ultricies velit. Nam sit amet velit eget sapien auctor luctus at eget tortor. Sed varius metus id convallis iaculis. Sed quis arcu venenatis, venenatis elit rutrum, luctus leo. Duis blandit non tellus ac mollis. Praesent fringilla magna eu massa tincidunt accumsan. Ut euismod eu nulla vitae fringilla. In congue ut lectus eu suscipit. Proin volutpat arcu a nisi mattis placerat. Nulla sagittis vel eros et tincidunt. Nam porta lectus ac porttitor auctor.\n`, function (err) {
 			if (err) return console.log(err);
